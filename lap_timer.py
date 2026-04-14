@@ -34,7 +34,7 @@ def cumulative_time(timer):
 
 
 def format_laps(timer):
-   return timer['times']
+   return str(timer['times'])
    pass
 
 

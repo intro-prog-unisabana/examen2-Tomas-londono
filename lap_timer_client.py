@@ -6,9 +6,9 @@ import lap_timer
 
 
 def main():
-    name = input("Ingrese el nombre del archivo: ")
+    filename = input("Ingrese el nombre del archivo: ")
     
-    with open(name, 'r') as f:
+    with open(filename, 'r') as f:
         n = int(f.readline().strip())
         timer = lap_timer.init(n)
 
@@ -16,7 +16,7 @@ def main():
             time = float(f.readline().strip())
             timer = lap_timer.add_lap(timer, time)
     
-    print("Tiempos de vuelta:", lap_timer.longest_decreasing_streak(timer))
+    print(lap_timer.longest_decreasing_streak(timer))
     
     pass
 
