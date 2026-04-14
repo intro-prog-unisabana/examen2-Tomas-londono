@@ -16,10 +16,9 @@ def main():
             time = float(f.readline().strip())
             timer = lap_timer.add_lap(timer, time)
     
-    print("Tiempos de vuelta:", lap_timer.format_laps(timer))
+    print("Tiempos de vuelta:", lap_timer.longest_decreasing_streak(timer))
     
     pass
-
 
 if __name__ == "__main__":
     main()
